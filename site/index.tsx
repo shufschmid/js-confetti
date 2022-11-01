@@ -41,10 +41,22 @@ function App(): JSX.Element {
   }, []);
 
   const onButtonClick = useCallback(() => {
-    let items =["super", "wow", "absoluter hammer"]
-
-    document.getElementById("myButton2").innerHTML =
-      items[Math.floor(Math.random() * items.length)]
+    const items = [
+      "Wie frisch und süffig lesbar es formuliert ist durch die Verbindung von kurz, leichthändig formuliert, fundiert (Quellen- und weiterführende Links). aus Basel für Basel.",
+      "Sachliche Texte, witzig, manchmal mit etwas Sarkasmus, versch. Briefing-Verfasser*innen",
+      "Tagesaktuelle Berichterstattung",
+      "Ganz langweilig: Alles",
+      "Kurz und bündig",
+      "Dass es am morgen in der Mailbox ist",
+      "Kurz, informativ, frisch und jugendlich (habe Jahrgang 1956…). Highlights sind stets die Recherchen, die lese ich IMMER! Ihr verlinkt oft Beiträge, das ist sehr gut und hilfreich",
+      "lockere Art",
+      "Früh, frisch, lokal, aktuell, prononciert. Und die Bajour-Datenprojekte (wem gehört Basel, werden auswärtige Schwinger bei der Zuteilung benachteiligt, …)",
+      "kurz und bündig",
+      "Die Kürze",
+      "Die Vielfalt",
+    ];
+    document.getElementById("Quote")!.innerHTML =
+      items[Math.floor(Math.random() * items.length)];
 
     if (jsConfettiRef.current) {
       jsConfettiRef.current
@@ -55,8 +67,10 @@ function App(): JSX.Element {
 
   return (
     <>
+        <p id="Quote">If this is coffee, please bring me some tea; </p><br/>
+
       <button className="button" onClick={onButtonClick} id="myButton2">
-        gute Nachricht!
+        mehr
       </button>
     </>
   );
