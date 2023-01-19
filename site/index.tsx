@@ -51,7 +51,7 @@ function App(): JSX.Element {
 'unabhängig',
 'Humor / Tonalität',
 'die aufsässig geführten Interviews von Andrea Fopp',
-'Die wichtigsten infos kurz und bündig zusammengefasst',
+'Die wichtigsten infos kurz und bündig zusammengefasst.',
 'euer Insider-Wissen, eure Positivität',
 'der persönliche Umgang mit den Leser*innen',
 'unterhaltsam und informativ',
@@ -66,7 +66,7 @@ function App(): JSX.Element {
 'Basel first ohne zugeknöpft zu sein',
 'nicht mehr wegzudenken',
 'up to date ohne selbst Zeitung lesen zu müssen',
-'Nach dem Lesen weiss ich, was in Basel los ist',
+'Nach dem Lesen weiss ich, was in Basel los ist.',
 'Gärngscheh-Aktionen!',
 'unabhängig recherchiert',
 'Beiträge von Partner-Medien',
@@ -74,22 +74,22 @@ function App(): JSX.Element {
 'Mischung aus ernsthafter Recherche und kleinen persönlichen Anmerkungen',
 'Der spürbare Schwung der Bajour-Crew!',
 'abwechslungsreich, weil jede Person einen eigenen Stil hat',
-'Dass man euer Engagement jedem einzelnen Briefing anmerkt',
+'Dass man euer Engagement jedem einzelnen Briefing anmerkt.',
 'zum Kaffee das Wichtigste im Schnellüberblick',
 'mir gefällt alles',
 'gärn gscheh ist eine grossartige Sache',
 'Ich fühle mich grundinformiert innerhalb sehr kurzer Zeit.',
 'auf Augenhöhe und mit Witz',
-'Im «Nützlichen» habe ich schon manchen erfreulichen Tipp gefunden',
-'Eigene Recherchen wie «Wem gehört Basel?»',
+'Im «Nützlichen» habe ich schon manchen erfreulichen Tipp gefunden.',
+'Eigene Recherchen wie "Wem gehört Basel?"',
 'Erweiterung vom Briefing auf FCB-Briefing',
 'Der Lokalbezug wir früher die Baz',
 'geschlechtersensibel und sozial',
 'relevanteste News gut gebündelt',
-'ist ein Ritual geworden (obwohl ich zu Beginn nicht verstanden habe, weshalb ich das brauchen sollte)',
+'Ist ein Ritual geworden (obwohl ich zu Beginn nicht verstanden habe, weshalb ich das brauchen sollte).',
 'eure Begeisterung und euer Engagement',
 'freundlich und locker',
-'Für mich ist das Briefing wie eine «Leseanleitung» für meinen restlichen News-Konsum',
+'Für mich ist das Briefing wie eine "«"Leseanleitung"»" für meinen restlichen News-Konsum.',
 'Dass ich es am Morgen im Bett lesen kann',
 'die Persönlichkeit der Schreibenden darf durchscheinen',
 'dass ihr ehrlich und simpel erklärt und formuliert',
@@ -99,30 +99,33 @@ function App(): JSX.Element {
 'feinsinnige Wortspiele und durchmischt mit Mundart',
 'Chapeau, um die Uhrzeit könnte ich mal meinen Namen sagen.',
 'Zusammenarbeit mit babanews',
-'Dankeschön an Euch alle. Ihr seid wunderbar',
+'Dankeschön an Euch alle. Ihr seid wunderbar.',
 'Presseschau querbeet',
-'Ich weiss als NZZ Abonnentin was in Basel geht',
+'Ich weiss als NZZ Abonnentin was in Basel geht.',
 'Verlinkung zu den detaillierteren Artikel',
 'Frisch drauf los und unbelastet',
 'Liste mit den Wohnungen',
 'dass ich jeden Morgen von einem netten Menschen persönlich begrüsst werde',
 'als wärs von einer Freundin',
 'der Gutemorgenton',
-'ich bin informiert und erhalte eine Einbettung',
+'Ich bin informiert und erhalte eine Einbettung.',
 'abwechslungsreich und manchmal eine Wundertüte',
-'Es ist cool, dass ihr euch abwechselt und alle ihren persönlichen Stil haben',
+'Es ist cool, dass ihr euch abwechselt und alle ihren persönlichen Stil haben.',
 'Obwohl ich noch jemanden von euch getroffen habe, habe ich das Gefühl, dass ich euch ziemlich gut kenne. :-)',
 'mein persönliches, mentales Aufwärmen',
 'ihr liefert immer Gesprächsstoff',
 'Newcomerin Michelle',
 'dass ihr offen und unverkrampft mit Fehlern umgeht',
 'Tierli für die Verlosung!',
-'die eingefärbten Wochenschau-Filmli fine ich ganz toll',
+'Die eingefärbten Wochenschau-Filmli fine ich ganz toll.',
 'Baseldytsch mit Ina (warum habe ich das schon so lange nicht gesehen?)',
 'Die Person hinter den News wird sichtbar.',
-'Kompakt und oft ohne bla bla.'];
-    document.getElementById("myButton2")!.innerHTML =
-      items[Math.floor(Math.random() * items.length)];
+'Kompakt und oft ohne bla bla.',
+'Die GIFs NERVEN!!! Dieses ewige Getanze auf dem Bildschirm lenkt ab.',
+'Zu viele Fehler in Rechtschreibung und Grammatik',
+'Die morgendlichen Befindlichkeits-Mitteilungen der Schreibenden: überflüssig'];
+    document.getElementById("myButton2")!.innerHTML = "&laquo;"+
+      items[Math.floor(Math.random() * items.length)]+"&raquo;";
 
     if (jsConfettiRef.current) {
       jsConfettiRef.current
@@ -136,7 +139,7 @@ function App(): JSX.Element {
         {/* <p id="Quote">If this is coffee, please bring me some tea; </p><br/> */}
 
       <button className="button" onClick={onButtonClick} id="myButton2">
-      freundlich, locker
+      &laquo;freundlich, locker&raquo;
       </button>
     </>
   );
